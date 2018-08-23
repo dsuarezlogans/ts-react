@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "baseUrl": ".",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "lib": ["es2017", "dom"],
+    "paths": {
+      "@store/*": ["src/redux-store/*"],
+      "@store": ["src/redux-store/index.ts"],
+      "@ui/*": ["src/ui/*"],
+      "tests/*": [ "tests/*" ],
+      "@assets/*": ["src/assets/*"]
+    }
+  },
+  "include": [
+    "src",
+    "tests",
+    
+  ],
+  "files": [
+    "images.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}

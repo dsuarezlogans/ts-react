@@ -1,0 +1,120 @@
+@import "~src/ui/styles/utils/_index.scss";
+@import "~src/ui/styles/base/_index.scss";
+
+.nav-bar-container {
+  background: $custom-grey-lighter;
+}
+
+.nav-bar-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1780px;
+  padding: 0;
+}
+
+.nav-bar {
+  & > div {
+    align-content: center;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.nav-bar-tabs {
+  align-content: center;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+
+  & > div {
+    position: relative;
+    width: 14%;
+
+    a {
+      align-items: center;
+      display: flex;
+      font-size: 18px;
+      height: 100%;
+      justify-content: center;
+      margin-top: 4px;
+      width: 100%;
+      color: $custom-black;
+      margin: 0;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav-bar-user {
+  align-content: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
+
+  div {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.nav-bar-user-label {
+  color: $custom-grey-light;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.42;
+  letter-spacing: normal;
+  width: 270px;
+
+  a {
+    color: $custom-grey-light;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.42;
+    letter-spacing: normal;
+    width: 270px;
+    margin: 0;
+    text-decoration: none;
+    cursor: text;
+    font-size: 18px;
+    text-align: right;
+    padding-right: 28px;
+  }
+}
+
+.line-tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.line-tab-selected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $custom-green-primary;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 8px;
+  width: 100%;
+}
+
+.nav-bar-user-notifications {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 32px;
+}
+
+.nav-bar-user-avatar {
+  cursor: pointer;
+  margin-left: 24px;
+  margin-right: 9%;
+  width: 32px;
+}
